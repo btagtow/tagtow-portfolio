@@ -42,6 +42,7 @@ class App extends React.Component {
   render() {
 
     return (
+      
       <div className="App">
         <div className="banner">
           <div className="banner-heading">
@@ -70,7 +71,7 @@ class App extends React.Component {
               {/* medium summary, snippets,and links */}
               <h3 className="nav-item clickable hover" value="life">my life & pitch</h3>
               {/* {"Get to know me" like interests and hobbies */}
-              <h3 className="nav-item clickable hover" value="history">history</h3>
+              {/* <h3 className="nav-item clickable hover" value="history">history</h3> */}
               {/* past work experience, marketing content and links to old blogs */}
             </div>
             <div className="selected-content">
