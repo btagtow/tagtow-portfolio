@@ -7,8 +7,22 @@ function Project(title, description, frontEndLanguages, backEndLanguages, github
     this.url = url;
 }
 let projectsList = [
-    new Project("The Broke Gambler", "A site for gambling", "React", "Ruby", "git", "urlurlurl"),
-    new Project("Tic-Tag-Tow", "A classy take on a classic game", "Vanilla Javascript", "", "git", "urlurlurl"),
+    new Project(
+        "The Broke Gambler", 
+        "A site for gambling", 
+        "React", 
+        "Ruby", 
+        "git", 
+        "urlurlurl"
+        ),
+    new Project(
+        "Tic-Tag-Tow", 
+        "A classy take on a classic game", 
+        "Vanilla Javascript", 
+        "", 
+        "git", 
+        "urlurlurl"
+        ),
     new Project("Pet-Adopter")
 ]
 
