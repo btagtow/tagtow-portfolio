@@ -5,21 +5,35 @@
   font-weight: 200;
   background-color: hsl(196, 20%, 80%);
 }
-a, .social-icon{
-  background-color: hsl(196, 20%, 68%);
-  height: 2rem;
+a{
   text-decoration:none; 
+  color: inherit;
 }
-a { color:inherit } /* Globally */
-
-/* Each state */
 
 .clickable{
   cursor: pointer;
 }
 .hover:hover{
+  color: black;
   font-weight: 600;
-  
+}
+.active{
+  color: hsl(0, 0%, 20%);
+  font-weight: 600;
+}
+.active-2{
+  color: hsl(0, 0%, 20%);
+  font-weight: 600;
+}
+.title{
+  font-weight: 600;
+}
+
+.title.blog{
+  height: 4.5rem;
+}
+.title.project{
+  height: 2rem;
 }
 .banner{
   display: flex;
@@ -29,6 +43,10 @@ a { color:inherit } /* Globally */
 }
 .banner-heading{
   border-radius: 1rem;
+  background-color: hsl(196, 20%, 75%);
+}
+.banner-item, .name-container{
+  background-color: inherit;
 }
 .hello-world{
   margin-left: 1rem;
@@ -44,26 +62,62 @@ a { color:inherit } /* Globally */
   font-weight: 600;
   margin-left: 8px;
 }
-.banner-social{
-  background-color: hsl(196, 20%, 68%);
+
+.social{
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
 }
 .social-icon{
   width: 2rem;
-  margin: 0.5rem;
+  margin-top: 1rem;
+  
+}
+.link-icon{
+  height: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+.nav-bar{
+  width: 8rem;
+  height: 10rem;
+  background-color: hsl(196, 20%, 75%);
+  margin-left: 1rem;
+  box-shadow: 3px 3px #87a0a8;
+
+}
+.nav-item{
+  display: flex;
+  width: fit-content;
+  background-color: inherit;
+  padding-left: 0.5rem;
+  
 }
 
 .main-container{
   display: flex;
+  padding-top: 1rem;
   justify-content: space-between;
-  padding: 2rem 2rem 0 2rem;
 }
-
+.selected-section{
+  width: 70%;
+}
 .selected-content{
   display: flex;
-  width: 60%;
+  flex-wrap: wrap;
 }
-.project-card{
+
+.card{
   padding-right: 2rem;
+  width: 20rem;
+  background-color: #87a0a8;
+
+}
+
+.content-nav{
+  display: flex;
+}
+.content-button{
+  margin-right: 1rem;
 }
 
 .side-bar{
