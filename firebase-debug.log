@@ -1,0 +1,33 @@
+[debug] [2020-09-01T01:18:38.648Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T01:18:38.650Z] Command:       /Users/benjamintagtow/.nvm/versions/node/v14.5.0/bin/node /Users/benjamintagtow/.nvm/versions/node/v14.5.0/bin/firebase deploy
+[debug] [2020-09-01T01:18:38.651Z] CLI Version:   8.9.2
+[debug] [2020-09-01T01:18:38.651Z] Platform:      darwin
+[debug] [2020-09-01T01:18:38.651Z] Node Version:  v14.5.0
+[debug] [2020-09-01T01:18:38.676Z] Time:          Mon Aug 31 2020 19:18:38 GMT-0600 (Mountain Daylight Time)
+[debug] [2020-09-01T01:18:38.677Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T01:18:38.677Z] 
+[debug] [2020-09-01T01:18:38.693Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T01:18:38.693Z] > authorizing via signed-in user
+[debug] [2020-09-01T01:18:38.694Z] [iam] checking project ben-tagtow for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-01T01:18:38.702Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ben-tagtow:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-01T01:18:38.973Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 01:18:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=126","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T01:18:38.977Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ben-tagtow  
+ 
+[debug] [2020-09-01T01:18:39.092Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 01:18:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'ben-tagtow'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-01T01:18:39.099Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ben-tagtow/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}],"headers":[{"glob":"/service-worker.js","headers":{"Cache-Control":"no-cache"}}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-01T01:18:40.029Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 01:18:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[ben-tagtow]: beginning deploy... 
+[info] i  hosting[ben-tagtow]: found 25 files in build 
+[debug] [2020-09-01T01:18:40.580Z] [hosting] hash cache [YnVpbGQ] stored for 25 files
+[debug] [2020-09-01T01:18:40.581Z] [hosting][hash queue][FINAL] {"max":523,"min":24,"avg":132.6,"active":0,"complete":25,"success":25,"errored":0,"retried":0,"total":25,"elapsed":538}
+[debug] [2020-09-01T01:18:40.581Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ben-tagtow/versions/5b1b246a676df0f6:populateFiles  
+ <request body omitted>
+[debug] [2020-09-01T01:18:41.257Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 01:18:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T01:18:41.271Z] [hosting][populate queue][FINAL] {"max":681,"min":681,"avg":681,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":694}
+[debug] [2020-09-01T01:18:41.271Z] [hosting] uploads queued: 16
