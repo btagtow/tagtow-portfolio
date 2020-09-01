@@ -3,6 +3,7 @@
 *{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
+  /* box-sizing: border-box; */
 }
 a{
   text-decoration:none; 
@@ -125,6 +126,24 @@ body{
   margin: 1rem;
   padding: 1.5rem;
 }
+.project.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-card.title{
+  display: flex;
+  justify-content: flex-start;
+  height: fit-content;
+  width: 6rem;
+}
+.project-card.github{
+  margin-left: 0.6rem;;
+}
+.social-icon.project-card{
+  height: 1rem;
+  width: auto;
+}
 .card:hover{
   background-color: hsl(195, 16%, 61%);
 }
@@ -140,6 +159,17 @@ body{
   justify-content: space-between;
 }
 
+.language-container{
+  display: flex;
+  justify-content: space-evenly;
+  /* height: 6rem; */
+  background-color: hsl(195, 16%, 63%);
+  width: inherit;
+}
+.language-id{
+  /* display: flex; */
+  /* justify-items: center; */
+}
 .content-nav{
   display: flex;
 }
