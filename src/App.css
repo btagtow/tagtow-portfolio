@@ -105,8 +105,12 @@ body{
 }
 .intro{
   line-height: 1.7rem;
+  font-size: 1.2rem;
 }
-
+.emphasis{
+  font-size: 1.4rem;
+  font-style: italic;
+}
 .selected-section{
   width: 70%;
 }
