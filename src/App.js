@@ -4,6 +4,8 @@ import mail from './images/social/mail.png'
 import medium from './images/social/medium.png'
 import github from './images/social/github.png'
 import ProfessionalNav from './components/professional/ProfessionalNav'
+import Intro from './components/Intro'
+import Gallery from './components/Gallery'
 
 import './App.css';
 
@@ -35,11 +37,15 @@ class App extends React.Component {
           return (
             <ProfessionalNav key="1"/>
           )
-      case "intro" : 
-          return (
-            <p>Welcome to my website!</p>
-          )
 
+      case "intro" : 
+        return (
+          <Intro />
+        )
+      case "life" : 
+        return (
+          <Gallery />
+        )
       default : 
           return "Select something"
     }

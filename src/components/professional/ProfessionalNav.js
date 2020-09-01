@@ -3,11 +3,11 @@ import Projects from '../../data/projects-list'
 import ProjectCard from '../cards/ProjectCard'
 import Blogs from '../../data/blogs-list'
 import BlogCard from '../cards/BlogCard'
-import externalLinkIcon from '../../images/external-link.png'
+import externalLinkIcon from '../../images/symbols/external-link.png'
 
 
 export default class ProfessionalNav extends Component {
-    state = {display: ""}
+    state = {display: "projects"}
 
     updateState = event => {
         return this.setState({display: event.target.getAttribute("value")})
@@ -41,28 +41,15 @@ export default class ProfessionalNav extends Component {
                             >
                             </ProjectCard>
                 })
-            case "pitch" : 
-                return (
-                    <p>
-
-                        Hi! Thanks for visiting my website. I'm Ben Tagtow. 
-                        I'm a web developer with a diverse background that includes marketing, communications, 
-                        project management, and leadership. I am dedicated to my role in cultivating positive 
-                        environments that embrace challenge and change while fostering growth and development.  
-                        I am known by colleagues and peers for my forward-thinking, 
-                        determined, and optimistic mindset.
-
-
-                    </p>
-                )
             case "blog" : 
                 return Blogs.reverse().map(blog => {
-                    let { title, teaser, date } = blog
+                    let { title, teaser, date, link } = blog
                     return <BlogCard 
                         key={title}
                         title={title}
                         teaser={teaser}
                         date={date}
+                        link={link}
                     />
                 })
             default : 
@@ -77,10 +64,10 @@ export default class ProfessionalNav extends Component {
         return (
             <div className="content-section">
                 <div className="content-nav">
-                    <h3 value="pitch" className="content-button clickable hover" onClick={event => this.contentSelector(event)}>elevator pitch</h3>
-                    <a value="resume" href="https://pdfhost.io/v/w0G8598rk_Ben_Tagtow_Resume_Portfolio_2020_pdf.pdf" target="_blank" rel="noopener noreferrer"> <h3 className="content-button clickable hover">resume <img className="link-icon" src={externalLinkIcon} alt="external link icon"></img> </h3> </a>
-                    <h3 value="projects" className="content-button clickable hover" onClick={event => this.contentSelector(event)}>projects</h3>
+                    {/* <h3 value="pitch" className="content-button clickable hover" onClick={event => this.contentSelector(event)}>elevator pitch</h3> */}
+                    <h3 value="projects" className="content-button clickable hover active-2" onClick={event => this.contentSelector(event)}>projects</h3>
                     <h3 value="blog" className="content-button clickable hover" onClick={event => this.contentSelector(event)}>blog</h3>
+                    <a value="resume" href="https://pdfhost.io/v/w0G8598rk_Ben_Tagtow_Resume_Portfolio_2020_pdf.pdf" target="_blank" rel="noopener noreferrer"> <h3 className="content-button clickable hover">resume <img className="link-icon" src={externalLinkIcon} alt="external link icon"></img> </h3> </a>
                 </div>
                 <div className="selected-content">
                     {this.content()}
