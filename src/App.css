@@ -3,26 +3,34 @@
 *{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
-  background-color: hsl(196, 20%, 80%);
 }
 a{
   text-decoration:none; 
   color: inherit;
+}
+body{
+  background-color: hsl(196, 20%, 75%);
+}
+
+.main-container{
+  display: flex;
+  padding-top: 1rem;
+  justify-content: space-between;
 }
 
 .clickable{
   cursor: pointer;
 }
 .hover:hover{
+  color: hsl(0, 0%, 20%);
+  font-weight: 600;
+}
+.active, .active-2{
   color: black;
   font-weight: 600;
 }
-.active{
-  color: hsl(0, 0%, 20%);
-  font-weight: 600;
-}
 .active-2{
-  color: hsl(0, 0%, 20%);
+  color: black;
   font-weight: 600;
 }
 .title{
@@ -34,6 +42,9 @@ a{
 }
 .title.project{
   height: 2rem;
+}
+.nonclick.title{
+  font-size: 1.5rem;
 }
 .banner{
   display: flex;
@@ -92,12 +103,10 @@ a{
   padding-left: 0.5rem;
   
 }
-
-.main-container{
-  display: flex;
-  padding-top: 1rem;
-  justify-content: space-between;
+.intro{
+  line-height: 1.7rem;
 }
+
 .selected-section{
   width: 70%;
 }
@@ -107,10 +116,24 @@ a{
 }
 
 .card{
-  padding-right: 2rem;
   width: 20rem;
   background-color: #87a0a8;
-
+  margin: 1rem;
+  padding: 1.5rem;
+}
+.card:hover{
+  background-color: hsl(195, 16%, 61%);
+}
+.card-description{
+  font-style: italic;
+}
+.card-description.blogs{
+  font-style: italic;
+  height: 4.5rem;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
 }
 
 .content-nav{
@@ -118,11 +141,26 @@ a{
 }
 .content-button{
   margin-right: 1rem;
+  font-size: 1.5rem;
 }
 
 .side-bar{
   display: flex;
   flex-direction: column;
   /* background-color: inherit; */
+}
+.image{
+  width: 25rem;
+  height: inherit;
+  border-radius: 5%;
+}
+.image-gallery{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow{
+  height: 2rem;
+  padding: 0 2rem;
 }
 

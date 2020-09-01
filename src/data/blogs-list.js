@@ -1,43 +1,56 @@
-function Blog(title, teaser, date){
+function Blog(title, teaser, date, link){
     this.title = title;
     this.teaser = teaser;
     this.date = date;
+    this.link = link;
 }
 let projectsList = [
     new Blog(
         "What a difference a few months makes...",
         "My experience two months into bootcamp.",
-        "Dec 10, 2019"
+        "Dec 10, 2019",
+        "https://medium.com/@bentagtow/what-a-difference-a-few-months-makes-a708a3675336"
     ),
     new Blog(
         "Half-full or half-empty? A quick look at Optimistic vs. Pessimistic Rendering",
         "At least 5–10 times a day, a random question/thought crosses my mind that requires a quick google search. The process is always the same…",
-        "Jan 6, 2020"
+        "Jan 6, 2020",
+        "https://medium.com/@bentagtow/half-full-or-half-empty-a-quick-look-at-optimistic-vs-pessimistic-rendering-dd73f24cc1bd"
+
     ),
     new Blog(
         "Brainstorming Your Next Coding Brainchild",
         "Or at least a few creative ideas to get you started",
-        "Jun 19, 2020"
+        "Jun 19, 2020",
+        "https://medium.com/dev-genius/brainstorming-your-next-coding-brainchild-f17b23540c0f"
+
     ),
     new Blog(
         "CSS Specificity",
         "One of the more confusing (but important) pieces of CSS is specificity. I have to admit, this concept took me quite a while to grasp.",
-        "Aug 18, 2020"
+        "Aug 18, 2020",
+        "https://medium.com/dev-genius/css-specificity-17649dadff14"
+
     ),
     new Blog(
         "Pólya’s Four Step Method — And How It Can Improve Your White Boarding",
         "Turns out the microwave oven was not the only useful tool invented in 1945",
-        "Aug 19, 2020"
+        "Aug 19, 2020",
+        "https://medium.com/dev-genius/p%C3%B3lyas-four-step-method-and-how-it-can-improve-your-white-boarding-452eb90d7b0b"
+
     ),
     new Blog(
         "Programming your brain to use keyboard shortcuts",
         "Keyboard shortcuts can be very underrated. For experienced programmers, many shortcuts are second nature.",
-        "Aug 26, 2020"
+        "Aug 26, 2020",
+        "https://medium.com/@bentagtow/programming-your-brain-to-use-keyboard-shortcuts-5be31e5f37c2"
+
     ),
     new Blog(
         "CSS Pseudo-Classes (including :nth-child)",
         "A highly effective, and fairly straight-forward, way to make your pages look better is by using CSS pseudo-classes (or pseudo-selectors).",
-        "Aug 26, 2020"
+        "Aug 26, 2020",
+        "https://medium.com/@bentagtow/css-pseudo-classes-including-nth-child-752cfc6fa4c3"
     )
 ]
 

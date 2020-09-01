@@ -5,7 +5,7 @@ export default function ProjectCard({ title, description, frontEndLanguages, bac
         <div className="card">
 
             <h2 className="title">{title}</h2>
-            <h4>{description}</h4>
+            <h4 className="card-description">{description}</h4>
             <h5>Front-End: {frontEndLanguages}</h5>
             {backEndLanguages !== "" ? <h5>Back: {backEndLanguages} </h5> : null}
             
