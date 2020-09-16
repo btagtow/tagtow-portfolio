@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {
     Link
   } from "react-router-dom";
-
+import ProfessionalContent from './ProfessionalContent'
 import Projects from '../../data/projects-list'
 import ProjectCard from '../cards/ProjectCard'
 import Blogs from '../../data/blogs-list'
@@ -26,43 +26,6 @@ export default class ProfessionalNav extends Component {
           return event.target.className = event.target.className + " active-2"
         } 
       }
-
-    content = () => {
-        switch (this.state.display) {
-            case "resume" : 
-                return null
-            case "projects" : 
-                return Projects.map(proj => {
-                    console.log(proj)
-                    let { title, description, frontEndLanguages, backEndLanguages, githubFront, githubBack, url } = proj
-                    return  <ProjectCard 
-                            key={title}
-                            title={title} 
-                            description={description}
-                            frontEndLanguages={frontEndLanguages}
-                            backEndLanguages={backEndLanguages}
-                            githubFront={githubFront}
-                            githubBack={githubBack}
-                            url={url}
-                            >
-                            </ProjectCard>
-                })
-            case "blog" : 
-                return Blogs.reverse().map(blog => {
-                    let { title, teaser, date, link } = blog
-                    return <BlogCard 
-                        key={title}
-                        title={title}
-                        teaser={teaser}
-                        date={date}
-                        link={link}
-                    />
-                })
-            default : 
-                return null
-
-        }
-    }
     generateKey = (pre) => {
         return `${ pre }_${ new Date().getTime() }`;
     }
@@ -77,10 +40,10 @@ export default class ProfessionalNav extends Component {
                     <Link to="/professional/blogs">
                         <h3 value="blog" className="content-button clickable hover" onClick={event => this.contentSelector(event)}>blog</h3>
                     </Link>
-                    <a value="resume" href="https://pdfhost.io/v/w0G8598rk_Ben_Tagtow_Resume_Portfolio_2020_pdf.pdf" target="_blank" rel="noopener noreferrer"> <h3 className="content-button clickable hover">resume <img className="link-icon" src={externalLinkIcon} alt="external link icon"></img> </h3> </a>
+                    <a value="resume" href="https://pdfhost.io/v/vhSnF1AEx_Ben_Tagtow_Resume_2020pdf.pdf" target="_blank" rel="noopener noreferrer"> <h3 className="content-button clickable hover">resume <img className="link-icon" src={externalLinkIcon} alt="external link icon"></img> </h3> </a>
                 </div>
                 <div className="selected-content">
-                    {this.content()}
+                    <ProfessionalContent display={this.state.display} />
                 </div>
             </div>
         )

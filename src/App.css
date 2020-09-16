@@ -3,7 +3,7 @@
 *{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 a{
   text-decoration:none; 
@@ -11,6 +11,9 @@ a{
 }
 body{
   background-color: hsl(196, 20%, 75%);
+}
+li{
+  list-style: none;
 }
 
 .main-container{
@@ -49,8 +52,8 @@ body{
 }
 .banner{
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  padding: 1rem 0 1rem 2rem;
   background-color: hsl(196, 20%, 68%);
 }
 .banner-heading{
@@ -126,19 +129,34 @@ body{
   margin: 1rem;
   padding: 1.5rem;
 }
+.project-card-container{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  /* flex-wrap: wrap; */
+
+}
+.projects-section-header{
+  display: flex;
+  height: fit-content;
+}
+.info-button{
+  margin-left: 0.5rem;
+}
 .project.card{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project-card.title{
+.project-card-link{
   display: flex;
-  justify-content: flex-start;
-  height: fit-content;
-  width: 6rem;
 }
 .project-card.github{
   margin-left: 0.6rem;;
+}
+
+.in-a-day-project{
+  margin-left: 6rem;
 }
 .social-icon.project-card{
   height: 1rem;
@@ -150,9 +168,16 @@ body{
 .card-description{
   font-style: italic;
 }
-.card-description.blogs{
+.card-description.project-card{
   font-style: italic;
+  height: 2.4rem;
+  text-align: center;
+}
+.card-description.blogs{
   height: 4.5rem;
+}
+.title.underline{
+  text-decoration-line: underline;
 }
 .card-footer{
   display: flex;
@@ -161,14 +186,12 @@ body{
 
 .language-container{
   display: flex;
-  justify-content: space-evenly;
-  /* height: 6rem; */
-  background-color: hsl(195, 16%, 63%);
   width: inherit;
+  justify-content: space-around;
+  height: 3rem;
 }
-.language-id{
-  /* display: flex; */
-  /* justify-items: center; */
+.language-header{
+  margin-left: 0.5rem;
 }
 .content-nav{
   display: flex;
