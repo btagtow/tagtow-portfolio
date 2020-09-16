@@ -19,42 +19,42 @@ export default class Life extends React.Component {
             case 1 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src={image1}></img>
+                        <img className="image" src={image1} alt="me in Oregon mountains"></img>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )
             case 2 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src={image2}></img>
+                        <img className="image" src={image2} alt="me at an Avs game"></img>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )
             case 3 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src={image3}></img>
+                        <img className="image" src={image3} alt="me after Omaha Zoo 5k run"></img>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )
             case 4 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src={image4}></img>
+                        <img className="image" src={image4} alt="me getting confirmed as a CASA volunteer"></img>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
             case 5 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src={image5}></img>
+                        <img className="image" src={image5} alt="me posing with statue in New Orleans"></img>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
             case 6 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src={image6}></img>
+                        <img className="image" src={image6} alt="me next to colorful Maine flowers"></img>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
@@ -100,9 +100,9 @@ export default class Life extends React.Component {
                     <h3 value="giving back" className="content-button clickable hover">giving back</h3>
                 </div> */}
                 {/* <div> */}
-                    <img className="clickable arrow" src={LeftArrow} onClick={this.previousImage}></img>
+                    <img className="clickable arrow" src={LeftArrow} onClick={this.previousImage} alt="left arrow"></img>
                         {this.rotateImage()}
-                    <img className="clickable arrow" src={RightArrow} onClick={this.nextImage}></img>
+                    <img className="clickable arrow" src={RightArrow} onClick={this.nextImage} alt="right arrow"></img>
                 {/* </div> */}
     
 
