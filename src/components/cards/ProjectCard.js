@@ -17,7 +17,7 @@ export default function ProjectCard({ title, description, frontEndLanguages, bac
                 <div className="language back">
                         <a href={githubBack} target="_blank" rel="noopener noreferrer" className="project-card-link">
                             <img className="social-icon clickable project-card github" src={github} alt="Github link"></img> 
-                            <div className="project-card title" className="project-card-link">
+                            <div className="project-card title project-card-link">
                                 <h5 className="language-header">Back</h5>
                             </div>
                         </a>

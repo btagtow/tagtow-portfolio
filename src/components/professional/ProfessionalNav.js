@@ -3,10 +3,6 @@ import {
     Link
   } from "react-router-dom";
 import ProfessionalContent from './ProfessionalContent'
-import Projects from '../../data/projects-list'
-import ProjectCard from '../cards/ProjectCard'
-import Blogs from '../../data/blogs-list'
-import BlogCard from '../cards/BlogCard'
 import externalLinkIcon from '../../images/symbols/external-link.png'
 
 
@@ -40,7 +36,7 @@ export default class ProfessionalNav extends Component {
                     <Link to="/professional/blogs">
                         <h3 value="blog" className="content-button clickable hover" onClick={event => this.contentSelector(event)}>blog</h3>
                     </Link>
-                    <a value="resume" href="https://pdfhost.io/v/vhSnF1AEx_Ben_Tagtow_Resume_2020pdf.pdf" target="_blank" rel="noopener noreferrer"> <h3 className="content-button clickable hover">resume <img className="link-icon" src={externalLinkIcon} alt="external link icon"></img> </h3> </a>
+                    <a value="resume" href="https://pdfhost.io/v/DlUaeb~bM_Ben_Tagtow_Resume_2020pdf.pdf" target="_blank" rel="noopener noreferrer"> <h3 className="content-button clickable hover">resume <img className="link-icon" src={externalLinkIcon} alt="external link icon"></img> </h3> </a>
                 </div>
                 <div className="selected-content">
                     <ProfessionalContent display={this.state.display} />
