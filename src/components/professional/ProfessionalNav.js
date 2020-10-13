@@ -36,7 +36,9 @@ export default class ProfessionalNav extends Component {
                     <Link to="/professional/blogs">
                         <h3 value="blog" className="content-button clickable hover" onClick={event => this.contentSelector(event)}>blog</h3>
                     </Link>
-                    <a value="resume" href="https://pdfhost.io/v/DlUaeb~bM_Ben_Tagtow_Resume_2020pdf.pdf" target="_blank" rel="noopener noreferrer"> <h3 className="content-button clickable hover">resume <img className="link-icon" src={externalLinkIcon} alt="external link icon"></img> </h3> </a>
+                    <a value="resume" href="https://pdfhost.io/v/QDNM17e5O_Ben_Tagtow_Resume_2020pdf.pdf" target="_blank" rel="noopener noreferrer"> <h3 className="content-button clickable hover">resume <img className="link-icon" src={externalLinkIcon} alt="external link icon"></img> </h3> </a>
+                    {/* https://pdfhost.io/edit?doc=e3e80ae7-ef83-40c8-a8af-12ec1348eb48 */}
+
                 </div>
                 <div className="selected-content">
                     <ProfessionalContent display={this.state.display} />

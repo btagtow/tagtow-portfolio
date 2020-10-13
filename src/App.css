@@ -41,9 +41,9 @@ li{
   font-weight: 600;
 }
 
-.title.blog{
+/* .title.blog{
   height: 4.5rem;
-}
+} */
 .title.project{
   height: 2rem;
 }
@@ -173,9 +173,9 @@ li{
   height: 2.4rem;
   text-align: center;
 }
-.card-description.blogs{
-  height: 4.5rem;
-}
+/* .card-description.blogs{
+  height: 7rem;
+} */
 .title.underline{
   text-decoration-line: underline;
 }
@@ -207,8 +207,8 @@ li{
   /* background-color: inherit; */
 }
 .image{
-  width: 25rem;
-  height: inherit;
+  width: inherit;
+  height: 25rem;
   border-radius: 5%;
 }
 .image-gallery{

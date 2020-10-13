@@ -16,7 +16,7 @@ export default function intro() {
             led all of that to change. 
             </p>
             <p>
-            After discovering the possibilities (along with awesome challenges) of software development, 
+            After discovering the possibilities (along with the awesome challenges) of software development, 
             I realized I had been missing an important sense of fulfillment in my life and I needed to pursue it. 
             </p>
             <p className="emphasis">

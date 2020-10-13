@@ -34,7 +34,7 @@ let projectsList = [
     ),
     new Blog(
         "Brainstorming Your Next Coding Brainchild",
-        "Or at least a few creative ideas to get you started",
+        "A few creative ideas to get your next project started",
         "Jun 19, 2020",
         "https://medium.com/dev-genius/brainstorming-your-next-coding-brainchild-f17b23540c0f"
 

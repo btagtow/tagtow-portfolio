@@ -19,7 +19,7 @@ export default class Life extends React.Component {
                 return (
                     <div className="current-image">
                         {/* <img className="image" src={image1} alt="me in Oregon mountains"></img> */}
-                        <img className="image" src="https://i.imgur.com/aSiElYD.jpg" title="source: imgur.com" />
+                        <img className="image" src="https://i.imgur.com/aSiElYD.jpg" title="source: imgur.com" alt="professional picture of me" />
 
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
@@ -27,55 +27,55 @@ export default class Life extends React.Component {
             case 2 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src="https://i.imgur.com/VyqPilQ.jpg" title="source: imgur.com" />
+                        <img className="image" src="https://i.imgur.com/VyqPilQ.jpg" title="source: imgur.com" alt="me at a sporting event with family"/>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )
             case 3 : 
                 return (
                     <div className="current-image">
-                        <img className="image"  src="https://i.imgur.com/w9bW8cK.jpg" title="source: imgur.com" />
+                        <img className="image"  src="https://i.imgur.com/w9bW8cK.jpg" title="source: imgur.com" alt="me getting confirmed as a CASA volunteer"/>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )
             case 4 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src="https://i.imgur.com/E1GvGN7.jpg" title="source: imgur.com" />
+                        <img className="image" src="https://i.imgur.com/E1GvGN7.jpg" title="source: imgur.com" alt="me at a charity 5k"/>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
             case 5 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src="https://i.imgur.com/X7ZlYL0.jpg" title="source: imgur.com" />
+                        <img className="image" src="https://i.imgur.com/X7ZlYL0.jpg" title="source: imgur.com" alt="'the whole gang' - me with extended family"/>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
             case 6 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src="https://i.imgur.com/shaaon8.jpg" title="source: imgur.com" />
+                        <img className="image" src="https://i.imgur.com/shaaon8.jpg" title="source: imgur.com" alt="me at Red Rocks with friends"/>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
             case 7 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src="https://i.imgur.com/tFmxoaf.jpg" title="source: imgur.com" />                    {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
+                        <img className="image" src="https://i.imgur.com/tFmxoaf.jpg" title="source: imgur.com" alt="me in front of flowers in Maine" />                    {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
             case 8 : 
                 return (
                     <div className="current-image">
-                        <img className="image" src="https://i.imgur.com/BtpPMur.jpg" title="source: imgur.com" />
+                        <img className="image" src="https://i.imgur.com/BtpPMur.jpg" title="source: imgur.com" alt="me posing with statue in New Orleans"/>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
             case 9 : 
                 return (
                     <div className="current-image">
-                        <img src="https://i.imgur.com/CuvLWHc.jpg" title="source: imgur.com" />
+                        <img className="image" src="https://i.imgur.com/CuvLWHc.jpg" title="source: imgur.com" alt="me in oregon mountains"/>
                         {/* <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> */}
                     </div>
                 )   
@@ -84,7 +84,7 @@ export default class Life extends React.Component {
     }
 
     nextImage = () => {
-        if (this.state.image + 1 <= 6){
+        if (this.state.image + 1 <= 9){
 
             return (
                 this.setState({
@@ -107,7 +107,7 @@ export default class Life extends React.Component {
             )
         } else {
             this.setState({
-                image: 6
+                image: 9
             })
         }
     }
