@@ -6,6 +6,12 @@ function Blog(title, teaser, date, link){
 }
 let projectsList = [
     new Blog(
+        "Event Bubbling (and how to stop it using event.stopPropagation)",
+        "The principle of event bubbling states that: When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.",
+        "Oct 16, 2020",
+        "https://bentagtow.medium.com/event-bubbling-and-how-to-stop-it-using-event-stoppropagation-405d4c7c8ac8"
+    ),
+    new Blog(
         "CSS Pseudo-Classes (including :nth-child)",
         "A highly effective, and fairly straight-forward, way to make your pages look better is by using CSS pseudo-classes (or pseudo-selectors).",
         "Aug 26, 2020",
@@ -52,6 +58,7 @@ let projectsList = [
         "Dec 10, 2019",
         "https://medium.com/@bentagtow/what-a-difference-a-few-months-makes-a708a3675336"
     ),
+    
 ]
 
 export default projectsList
