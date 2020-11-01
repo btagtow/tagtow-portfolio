@@ -51,7 +51,7 @@ export default function ProfessionalContent( { display }) {
                         </div>
                         <div className="in-a-day-project">
                             <div className="projects-section-header"> 
-                                <h1>"Apps in a day"</h1>
+                                <h1>"App in a day"</h1>
                                 {/* <h3 className="info-button">i</h3> */}
                             </div>
                             {oneDay.map(createProjectCards)}
