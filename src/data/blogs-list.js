@@ -6,6 +6,12 @@ function Blog(title, teaser, date, link){
 }
 let projectsList = [
     new Blog(
+        "When to use Double Equals and when to use Triple Equals in JavaScript: == vs. ===",
+        "Knowing the differences between both the purpose and functionality of the two operators is a foundational piece of being a JavaScript developer",
+        "Oct 24, 2020",
+        "https://bentagtow.medium.com/when-to-use-double-equals-and-when-to-use-triple-equals-in-javascript-vs-bb8b49d560b5"
+    ),
+    new Blog(
         "Event Bubbling (and how to stop it using event.stopPropagation)",
         "The principle of event bubbling states that: When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.",
         "Oct 16, 2020",
