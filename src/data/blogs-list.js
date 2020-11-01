@@ -6,6 +6,12 @@ function Blog(title, teaser, date, link){
 }
 let projectsList = [
     new Blog(
+        "How to use switch statements in Javascript (with examples)",
+        "Switch statements are used, primarily, when you have logic that would otherwise be written as a long-winded conditional statement. ",
+        "Oct 31, 2020",
+        "https://bentagtow.medium.com/how-to-use-switch-statements-in-javascript-with-examples-a0e553edfcdf"
+    ),
+    new Blog(
         "When to use Double Equals and when to use Triple Equals in JavaScript: == vs. ===",
         "Knowing the differences between both the purpose and functionality of the two operators is a foundational piece of being a JavaScript developer",
         "Oct 24, 2020",
