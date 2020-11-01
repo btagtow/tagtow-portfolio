@@ -19,9 +19,9 @@ export default function intro() {
             After discovering the possibilities (along with the awesome challenges) of software development, 
             I realized I had been missing an important sense of fulfillment in my life and I needed to pursue it. 
             </p>
-            <p className="emphasis">
+
             The opportunity to change the world through technology has never been more potent. 
-            </p>
+
             <p>
             
             That's why, in 2019, I quit my job and 
